@@ -95,7 +95,7 @@ class enterprise extends Warp//inherits from Particle
 	mySize = mySize*0.95;
 	myX = myX + (int)(Math.random()*1);
 	myY = myY + (int)(Math.random()*-2)+1;
-	headMoveX = headMoveX + (int)(Math.random()*1);
-	headMoveY = headMoveY + (int)(Math.random()*-2)+1;
+	headMoveX = headMoveX + (int)(Math.random()*2);
+	headMoveY = headMoveY + (int)(Math.random()*-4)+1;
   }  
 }
