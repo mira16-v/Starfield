@@ -26,7 +26,7 @@ void draw()
   }
 }
 class Warp{
-  int myColor, headMove;
+  int myColor, headMoveX, headMoveY;
   double myX, myY, mySpeed, myAngle, mySize;
   Warp(){
 	myX = mouseX;
