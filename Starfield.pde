@@ -35,7 +35,8 @@ class Warp{
 	mySpeed = (Math.random()*10)+9;
 	myColor = (int)(Math.random()*255);
 	mySize = 300;
-	headMove = mouseY;
+	headMoveX = mouseX;
+	headMoveY = mouseY;
   }
   void show(){
 	fill((int)(Math.random()*245)+42, (int)(Math.random()*36)+35, (int)(Math.random()*255)+35);
@@ -85,7 +86,7 @@ class enterprise extends Warp//inherits from Particle
 	line((int)myX+((int)mySize/8), (int)myY+((int)mySize*0.5), (int)myX+((int)mySize/2), (int)myY+((int)mySize*1.3)); //right side arm
     
 	ellipse((int)myX, (int)myY+10, (int)mySize/3, (int)mySize*1.9); //torso
-	ellipse((int)myX, headMove-50, (int)mySize, (int)mySize); //head
+	ellipse(headMoveX, headMove-50, (int)mySize, (int)mySize); //head
     
 	ellipse((int)myX-((int)mySize/2), (int)myY+((int)mySize*1.3), (int)mySize/6, (int)mySize*0.7); //left side
 	ellipse((int)myX+((int)mySize/2), (int)myY+((int)mySize*1.3), (int)mySize/6, (int)mySize*0.7);  //right side
@@ -94,6 +95,7 @@ class enterprise extends Warp//inherits from Particle
 	mySize = mySize*0.95;
 	myX = myX + (int)(Math.random()*1);
 	myY = myY + (int)(Math.random()*-2)+1;
-	headMove = headMove + (int)(Math.random()*-2)+1;
+	headMoveX = headMoveX + (int)(Math.random()*1);
+	headMoveY = headMoveY + (int)(Math.random()*-2)+1;
   }  
 }
