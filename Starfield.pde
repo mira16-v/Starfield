@@ -35,7 +35,8 @@ class Warp{
 	mySpeed = (Math.random()*10)+9;
 	myColor = (int)(Math.random()*255);
 	mySize = 300;
-	headMove = 500;
+	headMoveX = mouseX;
+	headMoveY = mouseY;
   }
   void show(){
 	fill((int)(Math.random()*245)+42, (int)(Math.random()*36)+35, (int)(Math.random()*255)+35);
