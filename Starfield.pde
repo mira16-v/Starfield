@@ -1,7 +1,7 @@
 Warp [] data;
 void setup()
 {
-  //frameRate(2);
+  frameRate(2);
   size(1000, 1000);
   data = new Warp[1000];
   for(int i = 0; i < 1; i++){
