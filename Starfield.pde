@@ -85,7 +85,7 @@ class enterprise extends Warp//inherits from Particle
 	line((int)myX+((int)mySize/8), (int)myY+((int)mySize*0.5), (int)myX+((int)mySize/2), (int)myY+((int)mySize*1.3)); //right side arm
     
 	ellipse((int)myX, (int)myY+10, (int)mySize/3, (int)mySize*1.9); //torso
-	ellipse((int)myX, headMove, (int)mySize, (int)mySize); //head
+	ellipse((int)myX, headMove-50, (int)mySize, (int)mySize); //head
     
 	ellipse((int)myX-((int)mySize/2), (int)myY+((int)mySize*1.3), (int)mySize/6, (int)mySize*0.7); //left side
 	ellipse((int)myX+((int)mySize/2), (int)myY+((int)mySize*1.3), (int)mySize/6, (int)mySize*0.7);  //right side
