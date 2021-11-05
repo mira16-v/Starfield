@@ -15,7 +15,7 @@ void draw()
 {
   background(0);
   for(int i = 0; i < 1000; i++){
-	if(i%2 == 0){
+	if(i%5 == 0){
   	fill(255);
   	ellipse((int)(Math.random()*1000), (int)(Math.random()*1000), (int)(Math.random()*5)+1, (int)(Math.random()*5)+1);
 	}
